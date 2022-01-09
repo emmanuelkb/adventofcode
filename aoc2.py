@@ -1,5 +1,6 @@
+file = open('aoc2.txt').read().splitlines()
+
 def aoc2a():
-    file = open('aoc2.txt').read().splitlines()
     elements = [element.split() for element in file]
     horizontal = 0
     depth = 0
@@ -12,8 +13,8 @@ def aoc2a():
             depth += int(i[1])
     return horizontal * depth
 
+
 def aoc2b():
-    file = open('aoc2.txt').read().splitlines()
     elements = [element.split() for element in file]
     horizontal = 0
     depth = 0
@@ -29,3 +30,4 @@ def aoc2b():
         elif i[0] == 'down':
             aim += int(i[1])
     return horizontal * depth
+
